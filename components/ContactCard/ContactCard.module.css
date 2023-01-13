@@ -1,0 +1,14 @@
+.container {
+    margin: auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    column-gap: 5px;
+    padding-top: 10px;
+}

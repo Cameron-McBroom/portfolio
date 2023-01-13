@@ -2,6 +2,7 @@ import Head from 'next/head'
 // import Image from 'next/image'
 // import { Inter, Nunito, Montserrat } from '@next/font/google'
 import styles from '../styles/Home.module.css'
+import ContactCard from "../components/ContactCard/ContactCard";
 
 
 export default function Home() {
@@ -14,8 +15,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1 className={'title'}>Cameron McBroom</h1>
-          <p>Hello this is a test</p>
+        <ContactCard
+            name="Cameron McBroom"
+            greeting={"Hi I am Cameron 👋"}
+            phone={"0401 817 894"}
+            email={"cam.mcbroom@gmail.com"}
+            location={"Emu Plains, NSW"}
+            githubUrl={"https://github.com/cameron-mcbroom"}/>
       </main>
     </>
   )
