@@ -1,21 +1,24 @@
 import React from 'react';
 import SimpleBadge from "../Badge/SimpleBadge";
 import {BadgeVariant} from "../Badge/Badge.types";
-import styles from './ContactCard.module.css'
+import styles from './ContactCard.module.css';
+import Image, {StaticImageData} from "next/image";
+
 
 type ContactCardProps = {
-    name: String
-    greeting: String
-    phone: String
-    email: String
-    location: String
-    githubUrl: String
-    avatarUrl?: String
+    name: string
+    greeting: string
+    phone: string
+    email: string
+    location: string
+    githubUrl: string
+    avatarUrl?: string | StaticImageData
 }
 
 const ContactCard = (props: ContactCardProps) => {
     return (
         <div className={styles.container}>
+            {props.avatarUrl && <Image src={props.avatarUrl} alt={"profile image"} className={styles.avatar} height={150} width={150}/>}
             <p> {props.greeting} </p>
             <h1 className={'title'}> {props.name} </h1>
             <div className={styles.links}>

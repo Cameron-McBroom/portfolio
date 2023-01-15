@@ -1,0 +1,21 @@
+.sectionSmall, .sectionMedium, .sectionLarge {
+    padding: 2rem;
+    margin: auto;
+}
+
+.sectionSmall {
+    width: 500px;
+}
+
+.sectionMedium {
+    width: 800px;
+}
+
+.sectionLarge {
+    width: 1000px;
+}
+
+.sectionHeading {
+    color: var(--primary-rgb);
+    font-size: var(--font-heading-size);
+}
