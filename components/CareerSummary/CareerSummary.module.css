@@ -1,16 +1,11 @@
-.container {
-    padding: 2rem;
-    width: var(--width-m);
-    margin: auto;
-}
-
 .headline {
     font-size: var(--font-subheading-size);
     color: var(--text-label-rgb);
     font-style: italic;
     padding-bottom: 1rem;
+    text-align: left;
 }
 
 .summary {
-
+    text-align: left;
 }

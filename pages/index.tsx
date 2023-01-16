@@ -6,6 +6,8 @@ import ContactCard from "../components/ContactCard/ContactCard";
 import avatar from '../public/profile.png'
 import CareerSummary from "../components/CareerSummary/CareerSummary";
 import Section from "../components/Section/Section";
+import SkillsHighlight from "../components/SkillsHighlight/SkillsHighlight";
+import SkillsChart from "../components/SkillsChart/SkillsChart";
 
 
 export default function Home() {
@@ -28,14 +30,36 @@ export default function Home() {
             avatarUrl={avatar}/>
 
 
+          <Section>
+              <CareerSummary
+                  headline="Seeking junior software developer opportunity building web applications"
+                  summary="Self-taught software developer having completed 18 months commercial experience at an
+              incident management start-up involving extensive use of JavaScript, Swift, Java, Agile methodologies and design patterns.
+              Working in diverse roles whilst achieving a Bachelor of Business (Management) has provided exceptional collaboration skills, problem solving, work output and adaptability.
+              Recently taking a short break from software development to run my own business, reaffirmed my true passion for software development.
+              I am now seeking an opportunity to work with a collaborative team to build high quality, innovative web applications and eventually contribute to leading and developing a great team."/>
+          </Section>
 
-          <CareerSummary
-              headline="Seeking junior software developer opportunity building web applications"
-              summary="Self-taught software developer having completed 18 months commercial experience at an incident management start-up involving extensive use of JavaScript, Swift, Java, Agile methodologies and design patterns. Working in diverse roles whilst achieving a Bachelor of Business (Management) has provided exceptional collaboration skills, problem solving, work output and adaptability. Recently taking a short break from software development to run my own business, reaffirmed my true passion for software development. I am now seeking an opportunity to work with a collaborative team to build high quality, innovative web applications and eventually contribute to leading and developing a great team."/>
 
           <Section heading="Key Skills">
-              <div> Hello </div>
+              <SkillsHighlight skills={[
+                  "Creative problem solving",
+                  "Teamwork and collaboration",
+                  "Ability to write clean, reusable code",
+                  "Ability to turn designs into code",
+                  "Communication",
+                  "Analytical",
+                  "Leadership"
+              ]}/>
           </Section>
+
+          <Section heading="Technical Skills">
+              <SkillsChart skills={[
+                  {name: "JavaScript", monthsExperience: 24},
+                  {name: "Java", monthsExperience: 12},
+              ]}/>
+          </Section>
+
 
       </main>
     </>

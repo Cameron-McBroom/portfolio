@@ -1,0 +1,10 @@
+.container {
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bar {
+    border: 2px solid red;
+    padding: 1rem;
+}
